@@ -3,13 +3,13 @@ import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 if number < 0:
-    number *= -1
+    number = number * -1
 else:
     number = number
 
 num = number % 10
 if number < 0:
-    num *= -1
+    num = num * -1
 
 if num > 5:
     msg = 'and is greater than 5'

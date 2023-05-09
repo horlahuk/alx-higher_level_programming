@@ -3,9 +3,9 @@ import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 if number < 0:
-    number = number * -1
+    numb = number * -1
 else:
-    number = number
+    numb = number
 
 num = number % 10
 if number < 0:

@@ -7,7 +7,7 @@ if number < 0:
 else:
     numb = number
 
-num = number % 10
+num = numb % 10
 if number < 0:
     num = num * -1
 

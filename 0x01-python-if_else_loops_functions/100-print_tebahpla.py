@@ -7,4 +7,4 @@ for char in range(122, 96, -1):
     else:
         output += "{:c}".format(char - 32)
 
-print(output)
+print(output, end="")

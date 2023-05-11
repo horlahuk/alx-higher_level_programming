@@ -10,4 +10,7 @@ if __name__ == "__main__":
     minus = sub(a, b)
     multiply = mul(a, b)
     divide = div(a, b)
-    print("{:d} + {:d} = {:d}\n{:d} + {:d} = {:d}\n{:d} + {:d} = {:d}\n{:d} + {:d} = {:d}".format(a, b, plus, a, b, minus, a, b, multiply, a, b, divide))
+    print("{:d} + {:d} = {:d}".format(a, b, plus))
+    print("{:d} + {:d} = {:d}".format(a, b, minus))
+    print("{:d} + {:d} = {:d}".format(a, b, multiply))
+    print("{:d} + {:d} = {:d}".format(a, b, divide))

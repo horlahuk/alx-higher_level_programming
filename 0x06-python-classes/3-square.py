@@ -4,7 +4,7 @@
 
 
 class Square:
-    """Instantiation witb size, raise TypeError or ValueError if size is not an int or value < 0"""
+    """raise TypeError or ValueError if size is not an int or value < 0"""
     def __init__(self, size=0):
         self.__size = size
         if type(size) is not int:

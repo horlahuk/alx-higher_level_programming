@@ -2,6 +2,7 @@
 
 """An empty class, named Square"""
 
+
 class Square:
     """Defines a square."""
     pass

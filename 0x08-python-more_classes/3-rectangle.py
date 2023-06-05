@@ -50,4 +50,17 @@ class Rectangle:
         """Perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.___width + self.__height)
+        return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """Print rectangle with #"""
+        rect = ""
+        if self.__width == 0 or self.__height == 0:
+            return rect
+
+        for h in range(self.__height):
+            for w in range(self.__width):
+                rect = rect + '#'
+            if h != self.__height - 1:
+                rect = rect + '\n'
+        return rect

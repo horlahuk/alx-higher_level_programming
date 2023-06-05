@@ -4,6 +4,8 @@
 
 class Rectangle:
     """a new class, Rectangle"""
+    number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initialize a new rectangle class
@@ -54,17 +56,19 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Print rectangle with #"""
-        rect = ""
+        """Return the printable representation of the Rectangle.
+        Represents the rectangle with the # character.
+        """
         if self.__width == 0 or self.__height == 0:
-            return rect
+            return ("")
 
-        for h in range(self.__height):
-            for w in range(self.__width):
-                rect = rect + '#'
-            if h != self.__height - 1:
-                rect = rect + '\n'
-        return rect
+        rect = []
+        for i in range(self.__height):
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
 
     def __del__(self):
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")

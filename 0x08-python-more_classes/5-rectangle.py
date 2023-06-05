@@ -64,3 +64,6 @@ class Rectangle:
             if h != self.__height - 1:
                 rect = rect + '\n'
         return rect
+
+    def __del__(self):
+        print("Bye rectangle...")

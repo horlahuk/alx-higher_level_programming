@@ -37,7 +37,7 @@ Checking that appending works:
 	>>> l.append(3)
 	>>> l.append(4)
 	>>> print(l)
-	[1, 2, 4, 3]
+	[1, 2, 3, 4]
 
 Checking for list in correct order:
 	>>> l.print_sorted()

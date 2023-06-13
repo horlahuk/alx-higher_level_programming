@@ -20,5 +20,3 @@ def add_items():
         my_list.append(sys.argv[i])
 
     save_to_json(my_list, filename)
-
-add_items()

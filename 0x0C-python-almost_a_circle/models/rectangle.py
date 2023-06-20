@@ -1,10 +1,6 @@
 #!/usr/bin/python3
+"""defines a class rectangle that inherits from base"""
 from models.base import Base
-
-
-"""
-    class Rectangle that inherits from Base
-"""
 
 
 class Rectangle(Base):
@@ -158,4 +154,4 @@ class Rectangle(Base):
 
     def __str__(self):
         """Overrides the print statements"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)

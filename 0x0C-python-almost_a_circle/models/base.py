@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import json
 """
     class Base
-    To manage id attribute in future classes to avoid duplicating same
-    code. It will be the base of all other classes.
+    To manage id attribute in fiture classes to avoid duplicating same
+    code. It will be the base of all other classes
 """
+import json
 
 
 class Base:

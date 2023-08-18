@@ -18,5 +18,5 @@ if __name__ == "__main__":
         if (state.name == argv[4]):
             print(state.id)
             break
-        else:
-            print("Not found")
+    else:
+        print("Not found")

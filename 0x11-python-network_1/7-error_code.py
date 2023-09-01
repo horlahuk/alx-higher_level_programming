@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 """Error code #1"""
-from sys import argv
-from requests import post
+import requests
+import sys
+
 
 if __name__ == "__main__":
-    req = post(argv[1], {'email': argv[2]})
-    print(req.text)
+    url = sys.argv[1]
+
+    response = requests.get(url)
+    if response.status_code >= 400:
+        print(f"Error code: {response.status_code}")
+    else:
+        print(response.text)

@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
 const request = require('request');
-const param = process.argv[2];
+const url = process.argv[2];
 
-request(param, (error, response, body) => {
+request(url, (error, response, body) => {
   if (!error) {
     console.log('code: ', response.statusCode);
   }

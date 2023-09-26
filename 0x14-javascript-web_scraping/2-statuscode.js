@@ -7,7 +7,4 @@ request(param, (error, response, body) => {
   if (!error) {
     console.log('code: ', response.statusCode);
   }
-  else {
-    console.log(error);
-  }
 });
